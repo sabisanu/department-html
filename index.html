@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Engineering Department Books</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .rightside {
+      width: 20%;
+      background-color:green;
+      padding: 20px;
+      color: white;
+    }
+    .rightside a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 15px;
+      font-weight: bold;
+      padding: 10px;
+      background-color: red;
+      border-radius: 5px;
+     
+    }
+      body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    
+    .rightside a:hover {
+      background-color: #1abc9c;
+    }
+    .deptBooks{
+      width: 80%;
+      padding: 20px;
+      background-color: #ecf0f1;
+    }
+    .books {
+      display: none;
+    }
+    .books:target {
+      display: block;
+    }
+    h2 {
+      color: blue;
+    }  
+  </style>
+</head>
+<body>
+
+  <div class="rightside">
+    <h2>Departments</h2>
+    <a href="#cse">CSE</a>
+    <a href="#ece">ECE</a>
+    <a href="#mech">MECH</a>
+  </div>
+
+  <div class="deptBooks">
+    <div id="cse" class="books">
+      <h2>CSE Books</h2>
+      <ul>
+        <li>Data Structures</li>
+        <li>Operating Systems</li>
+        <li>Computer Networks</li>
+        <li>Database Management Systems</li>
+      </ul>
+    </div>
+
+    <div id="ece" class="books">
+      <h2>ECE Books</h2>
+      <ul>
+        <li>Electronic Devices</li>
+        <li>Signals & Systems</li>
+        <li>Communication Systems</li>
+        <li>Digital Electronics</li>
+      </ul>
+    </div>
+
+    <div id="mech" class="books">
+      <h2>MECH Books</h2>
+      <ul>
+        <li>Thermodynamics</li>
+        <li>Fluid Mechanics</li>
+        <li>Strength of Materials</li>
+        <li>Machine Design</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
